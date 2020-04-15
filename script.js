@@ -7,8 +7,8 @@ if ('serviceWorker' in navigator) {
 
 function generateManifest(app_name) {
     const myDynamicManifest = {
-        "name": "Test Application",
-        "short_name": "Test app",
+        "name": document.title,
+        "short_name":window.location.hostname,
         "scope": window.location.href,
         "start_url": window.location.href,
         "display": "fullscreen",
